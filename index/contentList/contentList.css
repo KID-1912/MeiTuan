@@ -1,0 +1,101 @@
+.content{
+  padding-bottom: 48px;
+}
+
+/*分割线类*/
+.dividing-line:not(:last-of-type)::after{
+  display: inline-block;
+  content:'';
+  height: 8px;
+  width: 1px;
+  margin: 0 3px;
+  background-color: #ccc;
+}
+
+/*加载中loading-box样式*/
+.loading-box{
+  height: 5rem;
+  line-height: 5rem;
+}
+.icon-loading{
+  display: inline-block;
+  width: 2.0rem;
+  height: 2.0rem;
+  margin-right: 1rem;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/loading.png');
+  vertical-align: middle;
+  animation: rotate 1.2s linear infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*内容标题*/
+.list-title{
+  height: 1.8rem;
+  line-height: 1.8rem;
+  font-size: 1.6rem;
+}
+.list-title::before,.list-title::after{
+  display: inline-block;
+  content: '';
+  height: 0.05rem;
+  width: 3.0rem;
+  background-color: #bbbbbb;
+  vertical-align: middle;
+}
+
+/*店铺项*/
+.shop-item{
+  display: flex;
+  padding: 11px;
+}
+.shop-logo{
+  width: 76px;
+  height: 57px;
+}
+/*店铺信息*/
+.shop-info{
+  flex: 1;
+  margin-left: 7.5px;
+  line-height: 22px;
+}
+.shop-name{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #333;
+}
+/*店铺详细*/
+.shop-detail{
+  display: flex;
+  justify-content: space-between;
+}
+.shop-detail-left{
+  flex-shrink: 0;
+}
+.shop-rate{
+  margin-left: 0.2rem;
+}
+.month-sale{
+  margin-left: 5px;
+}
+.shop-detail-right{
+  text-align: right;
+}
+/*店铺活动*/
+.shop-activity{
+  color: #666;
+}
+.shop-activity-icon{
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+  vertical-align: text-top;
+}

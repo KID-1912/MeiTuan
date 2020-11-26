@@ -1,0 +1,49 @@
+#bottomBar{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  bottom: 0;
+  left: 0;right: 0;
+  background-color: #fafafa;
+}
+
+.bottombar-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bottombar-icon{
+  height: 24px;
+  width: 24px;
+  background-size: auto 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-index{
+  background-image: url('./img/homeIcon.png');
+}
+.active.icon-index{
+  background-image: url('./img/homeIconActive.png');
+}
+.icon-order{
+  background-image: url('./img/orderIcon.png');
+}
+.active.icon-order{
+  background-image: url('./img/orderIconActive.png');
+}
+.icon-my{
+  background-image: url('./img/myIcon.png');
+}
+.active.icon-my{
+  background-image: url('./img/myIconActive.png');
+}
+
+.bottombar-title{
+  color: #999;
+  font-size: 12px;
+  transform: scale(0.83);
+}

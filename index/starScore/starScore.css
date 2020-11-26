@@ -1,0 +1,24 @@
+.starScore{
+  display: inline-block;
+}
+.star-item{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 1px;
+}
+.icon-fullstar,.icon-halfstar,.icon-nostar{
+  -webkit-background-size: 12px auto;
+  background-size: 12px auto;
+  background-image: url('../img/stars.png');
+}
+
+.icon-fullstar{
+  background-position: center 0;
+}
+.icon-halfstar{
+  background-position: center -12px;
+}
+.icon-nostar{
+  background-position: center -24px;
+}

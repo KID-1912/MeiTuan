@@ -1,0 +1,13 @@
+.content{
+  min-height: 100%;
+  padding-top: 5rem;
+  background-color: #F0F0F0;
+}
+
+.null-order{
+  margin-top: 5rem;
+  font-size: 14px;
+}
+.null-order-img{
+  width: 125px;
+}

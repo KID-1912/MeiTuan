@@ -28,47 +28,25 @@
     <link rel="icon" href="./icon.ico">
     <link rel="stylesheet" href="./lib/reset.css"/>
     <link rel="stylesheet" href="./index/header/header.css">
-    <link rel="stylesheet" href="./index/searchBar/searchBar.css">
-    <link rel="stylesheet" href="./index/category/category.css">
-    <link rel="stylesheet" href="./index/starScore/starScore.css">
-    <link rel="stylesheet" href="./index/contentList/contentList.css">
+    <link rel="stylesheet" href="./order/contentList/contentList.css">
     <link rel="stylesheet" href="./common/bottomBar/bottomBar.css">
-    <title>首页</title>
+    <title>订单页</title>
   </head>
   <body>
     <!-- 头部开始 -->
     <header class="header">
-      <div class="search-bar">
-        <div class="bar-location"><span class="location-city">湖工大-南区<i> ></i></span>
-        </div>
-        <div class="search-input"><input id="searchInput" type="text" placeholder="请输入商家或商品名称">
-        </div>
-      </div>
     </header>
     <!-- 头部结束 -->
-    
-    <!-- 类目开始 -->
-    <div id="category" class="tc"></div>
-    <!-- 类目结束 -->
-
-    <!-- 商家列表开始 -->
     <div class="content">
-      <h4 class="list-title tc">
-        <span>附近商家</span>
-      </h4>
-      <div id="shopList">
-        <!-- 初始化的shopList数据 -->
+      <div class="null-order tc">
+        <div><img class="null-order-img" src="./order/img/null-order.png" alt=""></div>
+        <p class="null-order-text">暂无订单，快去下单吧~</p>
       </div>
-      <div class="loading-box tc"><i class="icon-loading"></i>正在加载...</div>
     </div>
-    <!-- 商家列表结束 -->
 
     <!-- 底部tabbar -->
     <div id="bottomBar" class="tc"></div>
   </body>
   <script src="./lib/jquery.min.js"></script>
-  <script src="./index/category/category.js"></script>
-  <script src="./index/starScore/starScore.js"></script>
-  <script src="./index/contentList/contentList.js"></script>
   <script src="./common/bottomBar/bottomBar.js"></script>
 </html>
