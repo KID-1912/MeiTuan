@@ -1,0 +1,92 @@
+.right{
+  position: absolute;
+  width: 100%;
+  top: 9rem;
+  bottom: 4.9rem;
+  padding-left: 8.0rem;
+  overflow: auto;
+}
+
+.menu-right-item{
+  padding: 0 10px;
+}
+
+.menu-right-item .list-item:not(:last-child){
+  margin-bottom: 30px;
+}
+.item-link{
+  display: flex;
+}
+
+.item-title{
+  height: 36px;
+  line-height: 36px;
+}
+
+/*左侧图片*/
+.menu-right-item .item-pic{
+  position: absolute;
+}
+.menu-right-item .item-img{
+  width: 75px;
+  height: 75px;
+}
+
+/*右侧信息*/
+.menu-right-item .item-info{
+  width: 100%;
+  padding-left: 83px;
+}
+.menu-right-item .item-name{
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+}
+.menu-right-item .item-dsc{
+  color: #666;
+  line-height: 20px;
+}
+.menu-right-item .item-sale{
+  color: #666;
+  font-size: 12px;
+  line-height: 18px;
+}
+.menu-right-item .sale-num{
+  margin-right: 10px;
+}
+
+.menu-right-item .item-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-right-item .price-num{
+  color: #fb4e44;
+  font-size: 18px;
+}
+
+/*购买数量控件*/
+.control-buy{
+  display: flex;
+  align-items: center;
+}
+.buy-num{
+  margin: 0 10px;
+  color: #333;
+  font-size: 16px;
+
+}
+.buy-decrease,.buy-increase{
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  border: none;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.buy-decrease{
+  background-image: url('./img/decrease.png');
+}
+.buy-increase{
+  background-image: url('./img/increase.png');
+}

@@ -1,0 +1,32 @@
+.tab-control{
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #f5f5f5;
+  color: #666;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 2;
+}
+.tab-item{
+  position: relative;
+  flex: 1;
+  height: 3.9rem;
+  line-height: 3.9rem;
+}
+.tab-item::after{
+  position: absolute;
+  display: block;
+  content: '';
+  width: 2.0rem;
+  height: 0.2rem;
+  margin-left: -1.0rem;
+  left: 50%;
+  bottom: -0.1rem;
+}
+.tab-item.active{
+  color: #333;
+  font-weight: bolder;
+}
+.tab-item.active::after{
+  background-color: #ffd300;
+}

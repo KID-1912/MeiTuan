@@ -1,0 +1,10 @@
+.header-nav{
+  display: flex;
+  border-bottom: 1px solid #676870;
+}
+.back-to{
+  width: 1.5rem;
+  height: 5.05rem;
+  margin-left: 1.6rem;
+  line-height: 5.05rem;
+}

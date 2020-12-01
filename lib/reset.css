@@ -16,7 +16,7 @@ html{
 }
 body {
     font: 12px / 1.5 Hiragino Sans GB, Arial, Helvetica, "宋体", sans-serif, "\5b8b\4f53" ; /*宋体 unicode */
-    /*color: ;主题色*/
+    color: #333;
     background: #fff;
     /*user-select: none; 图片文字不允许用户选中*/
 }
@@ -48,6 +48,7 @@ fieldset, img,{
     border: 0;
 }
 img {
+    width: 100%;
     vertical-align: middle;
 }
 /*文本垂直对齐*/
@@ -55,6 +56,9 @@ select, input {
 /*    vertical-align: middle;*/
     outline:0;
     border:none;
+}
+button{
+    outline: none;
 }
 /*防止拖动 影响布局*/
 textarea {
@@ -85,6 +89,11 @@ table {
 }
 .clearfix {
     *zoom: 1; /*IE/7/6*/
+}
+.text-ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 /*主题色填入*/
 .col-theme{

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script>
+      (function(){
+        // 750px设计稿，1rem = 20px 
+        const docEle = document.documentElement;
+        const minDeviceWidth = 320;
+        const maxDeviceWidth = 540;
+        setRemUnit();
+        window.addEventListener('resize',setRemUnit);
+        window.addEventListener('pageshow',function(e){
+          if(e.persisited) setRemUnit();
+        })
+
+         //计算并设置rem单位
+        function setRemUnit() {
+          var docEleWidth = docEle.clientWidth;
+          var w = docEleWidth > 540 ? 540 : (docEleWidth < 320 ? 320 : docEleWidth);
+          const remFontsize = (w / 750) * 20 + 'px';
+          docEle.style.fontSize = remFontsize;
+        }
+      })()
+    </script>
+    <base href="../">
+    <link rel="icon" href="./icon.ico">
+    <link rel="stylesheet" href="./lib/reset.css"/>
+    <link rel="stylesheet" href="./common/headerNav/headerNav.css"/>
+    <link rel="stylesheet" href="./common/tabControl/tabControl.css"/>
+    <link rel="stylesheet" href="./menu/left/left.css"/>
+    <link rel="stylesheet" href="./menu/right/right.css"/>
+    <link rel="stylesheet" href="./menu/shopBar/shopBar.css"/>
+    <title>点餐</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <div class="back-to"><img class="icon-back" src="../common/headerNav/img/back.png"></div>
+      </nav>
+    </header>
+    <div class="tab-control">
+    </div>
+    <div class="left">
+      <ul class="menu-left"></ul>
+    </div>
+    <div class="right">
+    </div>
+    <div class="shopBar">
+      <div class="cart-bar">
+        <div class="cart-toggle">
+          <div class="cart-count tc">0</div>
+          <img src="./menu/shopBar/img/shop-icon.png">
+        </div>
+        <div class="cart-info">
+          <div class="total-price">
+            <span class="unit-rmb">¥</span><span class="price-num">0</span>
+          </div>
+          <div class="delivery-fee">另需配送费¥2.5</div>
+        </div>
+        <div class="cart-payer tc">去结算</div>
+      </div>
+      <div class="cart-list">
+        <div class="list-header">
+          <div class="cart-title">购物车</div>
+          <div class="cart-clear">
+            <img class="icon-clear" src="./menu/shopBar/img/clear.jpeg">清空购物车
+          </div>
+        </div>
+        <div class="list-content">
+          <ul class="list-items"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./lib/jquery.min.js"></script>
+  <script src="./menu/cart.js">//购物车数据</script>
+  <script src="./common/headerNav/headerNav.js"></script>
+  <script src="./common/tabControl/tabControl.js"></script>
+  <script src="./menu/left/left.js"></script>
+  <script src="./menu/right/right.js"></script>
+  <script src="./menu/shopBar/shopBar.js"></script>
+</html>

@@ -50,7 +50,7 @@
   function getContentTmpl(data){
     var html = '';
     $(data).each(function(i,v){
-      html += '<div class="shop-item"><div class="shop-pic">';
+      html += '<a class="shop-item" href="./menu/menu.html"><div class="shop-pic">';
       html +=   getShopLogoTmpl(v.pic_url);
       html +=   getShopNameTmpl(v.name);
       var saleNum = getSaleNum(v.month_sale_num);
@@ -60,7 +60,7 @@
         var discounts = v.discounts2.slice(0,2);
         html +=   getShopActivityTmpl(discounts);
       };
-      html += '</div></div>';
+      html += '</div></a>';
     });
     return html;
   }

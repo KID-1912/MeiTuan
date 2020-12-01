@@ -10,7 +10,6 @@ let serverStatic = (request,response,root=".") => {
 	// 新增需求：请求地址路径不包含文件后缀则以index.html返回
 	if(!path.extname(pathName)) {
 		response.writeHead(301,{'Location': 'http://172.26.80.54/index/index.html'});
-		console.log(response._header);
 		return response.end();
 	}
 	let filePath = pathName;

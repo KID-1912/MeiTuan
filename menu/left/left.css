@@ -1,0 +1,30 @@
+.left{
+  position: absolute;
+  width: 8.0rem;
+  top: 9rem;
+  left: 0;
+  bottom: 4.9rem;
+  z-index: 1;
+}
+
+.menu-left{
+  height: 100%;
+  color: #666;
+  font-size: 1.2rem;
+  overflow-y: scroll;
+  background-color: #f5f5f5;
+}
+.menu-left-item{
+  padding-left: 1.0rem;
+  height: 4.9rem;
+  line-height: 4.9rem;
+}
+.menu-left-item.active{
+  background-color: #fff;
+}
+
+.menu-left-item > .item-img{
+  width: 1.5rem;
+  margin-right: 0.35rem;
+  vertical-align: text-top;
+}
